@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: rgb(255, 140, 32);
+    background-image: url(/img/background.png);
+    background-repeat: repeat;
+    min-width: 320px;
+}
+
+/* header */
+.mainheader {
+    display: flex;
+    align-items: center;
+    height: 350px;
+    background-color: red;
+    overflow: hidden;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+    flex: 70%;
+    background-color: red;
+    position: relative;
+    
+    align-items: center;
+}
+.name a{
+    color: black;
+    text-decoration: none;
+}
+.logo {
+   
+    flex: 30%;
+    position: relative;
+    background-color: yellow;
+    height: 100%;
+    z-index: 2;
+    border: 6px dashed black;
+
+}
+.logo a {
+    
+    cursor: pointer;
+    
+}
+
+.olmeca {
+    font-family: "Bungee";
+    line-height: 100px;
+    font-size: 90px;
+    font-weight: 100;
+
+}
+
+.sombrero {
+    font-family: "Parisienne";
+    font-size: 90px;
+    font-stretch: ultra-expanded;
+    line-height: 90px;
+    font-weight: 600;
+}
+
+
+
+.logoImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+
+}
+
+.cactusImg {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    height: 400px;
+    z-index: 1;
+}
+.cactusImg2 {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 300px;
+    z-index: 1;
+}
+
+
+
+
+.mainnav {
+    text-align: center;
+    float: left;
+    top: 310px;
+    right: 0;
+    font-size: 20px;
+    
+    width: 70%;
+    position: absolute;
+    z-index: 2;
+    
+    
+    
+}
+
+
+.mainnav a {
+    width: 20%;
+    padding: 5px 20px;
+    
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    margin: 1vw;
+    color: black;
+
+}
+.mainnav a:first-child{
+    display: none;
+}
+/* site */
+
+.flex-container {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    
+}
+
+.leftbar {
+    flex: 30%;
+    justify-content: center;
+    background-color: rgb(31, 233, 24);
+    /* border-right: 6px dashed black; */
+    border-bottom: 6px dashed black;
+    padding-bottom: 20px;
+}
+
+.leftbar img {
+    width: 100%;
+    display: block;
+    border: 3px solid white;
+    box-shadow: 5px 5px 10px;
+    /* position: absolute; */
+    
+}
+/* .leftbar div {
+    position: relative;
+    width: 90%;
+} */
+
+.leftbar img:nth-last-of-type(1) {
+    animation: 6s banner linear infinite;
+    
+   }
+ 
+/*  
+ 
+   @keyframes bannner {
+    0% {
+     opacity: 0;
+    }
+    40% {
+     opacity: 0;
+    }
+    50% {
+     opacity: 1
+    }
+    90% {
+     opacity: 1;
+    }
+    100% {
+     opacity: 0;
+    }
+   } */
+
+.leftbar div {
+    padding: 20px 10px 0px 10px;
+    
+
+}
+
+.mainpage {
+    flex: 70%;
+    text-align: center;
+    /* background-color: rgb(255, 140, 32); */
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    border: 6px dashed black;
+    border-right: none;
+    padding-bottom: 10px;
+    
+
+}
+
+/* app */
+#app{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color:  rgb(255, 140, 32);
+    align-content: center;
+    justify-content: center;
+    padding: 40px 0px;
+    
+}
+#app aside{
+    height: 10%;
+    flex: 30%;
+    text-align: center;
+    line-height: 100px;
+    align-self: center;
+    font-size: 60px;
+    font-family: "Bungee";
+    
+}
+.application{
+    flex: 70%;
+    padding: 0 20px;
+   
+    /* background-color: rgb(255, 140, 32); */
+    
+}
+
+.dish-container{
+    flex: 50%;
+    flex-wrap: wrap;
+    
+    min-height: 90px;
+}
+.dishName{
+    padding-top: 10px;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+}
+/* select */
+.application span{
+    float: left;
+    line-height: 39px;
+    margin-right: 20px;
+    font-size: 1.2em ;
+}
+.custom-select{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+    .custom-select select{
+        
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(252, 163, 61);
+        font-size: .9em;
+      
+    }
+    
+    .custom-select select option{
+      height: 30px;
+        font-size: 20px;
+        display: block;
+        background-color:rgb(252, 163, 61);
+    }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    
+  }
+  
+ 
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+.mainpage .paragraph{
+    border: 3px solid white;
+    box-shadow: 5px 5px 10px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    margin: 20px auto 0 auto;
+    background-color: rgb(161, 161, 161, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  
+    
+}
+.welcome{
+    width: 60%;
+    flex: 8%;
+    text-align: center;
+    border: none;
+}
+.welcome div{
+    margin: 0 auto;
+}
+.welcome .paragraph{
+    border: none;
+    background:none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+.welcome div:nth-child(1){
+    font-size: 25px;
+}
+.kitchen{
+    width: 90%;
+    flex: 20%;
+}
+.jalapeno{
+    width: 70%;
+    flex: 20%;
+}
+.us{
+    
+    width: 90%;
+    flex: 20%;
+}
+.amigo{
+    height: 100px;
+    flex: 5%;
+}
+
+
+
+
+
+/* footer */
+
+    footer .row{
+        width: 100%;
+        background-color:red;
+        padding-bottom: 15px;
+        
+    }
+
+    footer .column{
+        flex: 33.3%;
+        padding: 0px;
+        text-align: center;
+    }
+    footer .column img{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .little-logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .little-logo div:first-child{
+        font-family: "Bungee";
+        font-size: 40px;
+        line-height: 60px;
+      
+    }
+    .little-logo div:last-child{
+        font-family: "Parisienne";
+        font-size: 40px;
+        font-weight: 700;
+      
+    }
+    footer p{
+        font-size: 17px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+@media (min-width: 820px) {
+    .menu-trigger {
+        display:none;
+    }
+}
+
+@media (max-width:1000px) {
+    .cactus {
+        display: none;
+    }
+    .menu-trigger {
+        display:none;
+    }
+
+}
+
+@media (max-width:868px) {
+    .mainnav a:first-child{
+        display: block;
+    }
+    .leftbar {
+        display: none;
+    }
+
+    .logo {
+        /* background-color: red; */
+        height: 80%;
+        transform: translate(25%, 0%);
+        min-width: 120px;
+        margin: 0 10px;
+    }
+
+    .sombrero,
+    .olmeca {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+
+    .mainheader {
+        height: 230px;
+        /* position: relative; */
+        overflow: visible;
+        position: relative;
+        align-content: stretch;
+
+    }
+    .menu-trigger {
+        display:block;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        z-index: 2;
+        text-align: center;
+        width: 50px;
+        font-size: 40px;
+    } 
+    /* .hidingParent{
+        overflow: hidden;
+
+    } */
+    .mainnav {
+        background-color: orange;
+        text-align: center;
+        
+        top: 0;
+        left: 100%;
+        font-size: 20px;
+        
+        width: 100%;
+        position: fixed;
+        height: 100vh;
+        z-index: 2;
+        transition: .4s;
+    }
+    
+    .mainnav a {
+        padding: 10px 20px;
+        text-decoration: none;
+        border: 2px solid black;
+        margin: 1vw;
+        color: black;
+        width: 100%;
+        float: left;
+    
+    }
+    .active{
+        left: 0;
+    }
+    .unvisible{
+        display: none;
+    }
+    .mainpage{
+        border-right: 6px dashed black;
+    }
+
+}
+
+@media (max-width:450px){
+    .dish-container{
+        padding-top: 15px;
+        width: 100%;
+        border: none;
+        min-height: 90px;
+        padding-bottom: 15px;
+    }
+}

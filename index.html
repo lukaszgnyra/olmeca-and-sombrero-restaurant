@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Great+Vibes&family=Kaushan+Script&family=Kumar+One+Outline&family=Monoton&family=Parisienne&family=Satisfy&family=Special+Elite&family=Karla&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49242c5bc9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <title>Olmeca & Sombrero</title>
+</head>
+
+<body>
+    <header class="mainheader">
+        
+        <div class="logo">
+            <a href="/index.html"><img class="logoImg" src="/img/logo3.png" alt="logo"></a>
+        </div>
+        <div class="name">
+            <div class="cactus"><img class="cactusImg2" src="/img/cactus1.png" alt=""></div>
+           <a href="/index.html">
+            <div class="olmeca">Olmeca</div>
+            &
+            <div class="sombrero">Sombrero</div>
+        </a>
+
+            <div class="cactus"><img class="cactusImg" src="/img/cactus1.png" alt=""></div>
+        
+    </div>
+    <div onclick="changeClass()" class="menu-trigger">
+        <i class="fas fa-bars"></i>
+    </div>
+        <nav class="mainnav">
+            <a href="#" onclick="closeMenu()"><i class="fas fa-times"></i></a>
+            <a href="/menu.html">Menu</a>
+            <a href="#">Koktajle i wina</a>
+            <a href="#">Catering</a>
+            <a href="#">Kontakt</a>
+        </nav>
+    
+    </header>
+
+
+
+
+    <div class="flex-container">
+        <aside class="leftbar">
+            <div><img src="/img/cactus.jpg" alt=""></div>
+            <div><img src="/img/taco2.jpg" alt=""></div>
+            <div><img src="/img/tequila.jpg" alt=""></div>
+            <div><img src="/img/sombrero.jpg" alt=""></div>
+        </aside>
+        <section class="mainpage">
+
+
+            <div class="welcome paragraph">
+                <div>Witamy w "Olmeca & Sombrero</div>
+                <div>nowej na mapie naszego miasta restauracji meksykańskiej</div>
+            </div>
+
+            <div class="kitchen paragraph">Naszą kuchnię charakteryzują oryginalne przepisy rodem ze słonecznego Mexico, a szef
+                naszej kuchni -
+                Eduardo de Flamenco zadba o każdy szczegół Waszych pysznych dań.</div>
+            <div class="jalapeno paragraph">Współpracujemy tylko z regionalnymi dostawcami mięsa i warzyw, a najlepsze przyprawy,
+                zioła, papryczki
+                jalapeno oraz avocado sprowadzamy bezpośrednio z Jukatanu i Tulum.</div>
+            <div class="us paragraph">Zapoznaj się z naszą bogatą ofertą i rozsmakuj w najlepszych tortillach, salsie, guacamole,
+                grillowanych
+                mięsach, rybach i warzywach. Skosztuj również naszych tequil (mamy szeroką gamę tych wódek z agawy) oraz
+                meksykańskich piw i południowoamerykańskich win.</div>
+            <div class="amigo paragraph">Zapraszamy Amigo!</div>
+
+
+        </section>
+        
+    </div>
+        <div id="app">
+            <aside>Menu: </aside>
+            <div class="application">
+                <span>Wybierz: </span>
+                <div class="custom-select">
+                    <select v-model="option">
+                        <option value="1">Entradas / Przystawki</option>
+                        <option value="2">Sopa / Zupy</option>
+                        <option value="3">Fajitas</option>
+                        <option value="4">Quesadillas</option>
+                        <option value="5">Tacos</option>
+                        <option value="6">Thamales</option>
+                        <option value="7">Burritos</option>
+                        <option value="8">Chimichanga</option>
+                        <option value="9">Postre / desery</option>
+                    </select>
+                </div>
+           
+            <div v-for="category in chooseTitle">
+                {{category.Desc}}
+            </div>
+            <div class="dish-container" v-for="item in chooseOption">
+                <div class="dish">
+                <div class="dishName"> ~ {{item.Name}}</div>
+                <div class="dishDescription">{{item.Description}}</div>
+            </div>
+        </div>
+            </div>
+            
+        </div> 
+    
+    <footer>
+        <div class="row">
+                
+                <div class="column"> 
+                        <img src="/img/logo3.png" alt="">
+                </div>
+                <div class="column">
+                    <div class="little-logo">
+                        <div>Olmeca</div>
+                        &
+                        <div>Sombrero</div>
+                    </div>
+                    <p>Kontakt</p>
+                    <p>ul. Zmyślona 10</p>
+                    <p>80-180 Gdańsk</p>
+                    <p>Zadzwoń i zarezerwuj stolik</p>
+                    <p>Tel. 555 555 555</p>
+                    <p>E-mail: kontakt@olmecaandsobrero.pl</p>
+                </div>
+                 <div class="column">
+                    Godziny otwarcia:
+                    <p>Pn. - Czw. 10.00 - 22.00</p>
+                    <p>Pt. - Sb. 10.00 - 24.00</p>
+                    <p>Ndz. 12.00 - 22.00</p>
+                 </div>
+                
+        </div>
+            
+        
+    </footer>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>

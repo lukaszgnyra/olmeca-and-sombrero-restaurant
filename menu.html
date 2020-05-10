@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Great+Vibes&family=Kaushan+Script&family=Kumar+One+Outline&family=Monoton&family=Parisienne&family=Satisfy&family=Special+Elite&family=Karla&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49242c5bc9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    
+    <title>Olmeca & Sombrero</title>
+</head>
+
+<body>
+    <header class="mainheader">
+        
+        <div class="logo">
+            <a href="/index.html"><img class="logoImg" src="/img/logo3.png" alt="logo"></a>
+        </div>
+        <div class="name">
+            <div class="cactus"><img class="cactusImg2" src="/img/cactus1.png" alt=""></div>
+            <div class="olmeca">Olmeca</div>
+            &
+            <div class="sombrero">Sombrero</div>
+           
+
+            <div class="cactus"><img class="cactusImg" src="/img/cactus1.png" alt=""></div>
+        
+    </div>
+    <div onclick="changeClass()" class="menu-trigger">
+        <i class="fas fa-bars"></i>
+    </div>
+        <nav class="mainnav">
+            <a href="#" onclick="closeMenu()"><i class="fas fa-times"></i></a>
+            <a href="/menu.html">Menu</a>
+            <a href="#">Koktajle i wina</a>
+            <a href="#">Catering</a>
+            <a href="#">Kontakt</a>
+        </nav>
+    
+    </header>
+
+
+
+
+    <div class="flex-container">
+        <aside class="leftbar">
+            <div><img src="/img/cactus.jpg" alt=""></div>
+            <div><img src="/img/taco2.jpg" alt=""></div>
+            <div><img src="/img/tequila.jpg" alt=""></div>
+            <div><img src="/img/sombrero.jpg" alt=""></div>
+        </aside>
+        <section class="mainpage">
+            <div id="app">
+                <span>Wybierz: </span>
+                <select v-model="option">
+                    <option value="1">Entradas & Sopas</option>
+                    <option value="2">Fajitas & Quesadillas</option>
+                    <option value="3">Tacos & Thamales</option>
+                    <option value="4">Burritos & Chimichanga</option>
+                    <option value="5">Postre - desery</option>
+                </select>
+               
+                <div class="menu-container" v-for="item in chooseOption">
+                <div class="category">{{item.Category}}</div>
+                <div>{{item.Desc}}</div>
+                <div class="dish">
+                    <div class="dishname">~ {{item.Name}}</div>
+                    <div class="description">{{item.Description}}</div>
+                </div>
+            </div>
+            </div> 
+        
+
+        </section>
+
+    </div>
+    <footer>
+        <div class="row">
+            <div class="column">
+                <p>Kontakt</p>
+                <p>ul. Zmyślona 10</p>
+                <p>80-180 Gdańsk</p>
+                <p>Zadzwoń i zarezerwuj stolik</p>
+                <p>Tel. 555 555 555</p>
+            </div>
+            <div class="column"></div>
+        </div>
+    </footer>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>
