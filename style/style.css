@@ -153,16 +153,16 @@ body {
     background-position: center;
 }
 .leftbarphoto:nth-of-type(1){
-   background-image: url(./img/cactus.jpg); 
+   background-image: url("/img/cactus.jpg"); 
 }
 .leftbarphoto:nth-of-type(2){
-    background-image: url(./img/taco2.jpg); 
+    background-image: url(/img/taco2.jpg); 
 }
 .leftbarphoto:nth-of-type(3){
-    background-image: url(./img/tequila.jpg); 
+    background-image: url(/img/tequila.jpg); 
 }
 .leftbarphoto:nth-of-type(4){
-    background-image: url(./img/sombrero.jpg); 
+    background-image: url(/img/sombrero.jpg); 
 }
 
 
@@ -171,7 +171,7 @@ body {
 
 .mainpage {
     width: 100%;
-    flex: 100%;
+    flex: 70%;
     display: flex;
     flex-direction: column;
     border: 6px dashed black;
@@ -524,5 +524,8 @@ body {
         border: none;
         min-height: 90px;
         padding-bottom: 15px;
+    }
+    .mainpage .paragraph{
+        font-size: 12px;
     }
 }
