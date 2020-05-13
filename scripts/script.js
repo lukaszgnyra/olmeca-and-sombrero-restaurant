@@ -231,4 +231,72 @@ let app = new Vue({
     }
 });
 
+
+
+
+
+// drinks
+let appDrinks = new Vue({
+    el: "#appDrinks",
+    data: {
+        Drinks: [
+            {Name:"Finca Museum Reserva", Desc:"DO Cigales | El Coto | Hiszpania", Value:"3"},
+            {Name:"Vida Organica Malbec", Desc:"Mendoza | Familia Zuccardi | Argentyna", Value:"3"},
+            {Name:"Flagstone Dragon Tree", Desc:"Western Cape | Flagstone | RPA", Value:"3"},
+
+            {Name:"Goru El Blanco Moscatel & Chardonnay", Desc:"Jumilla | Ego Bodegas | Hiszpania", Value:"4"},
+            {Name:"Mud House Sauvignon Blanc", Desc:"Marlborough | Mud House | Nowa Zelandia", Value:"4"},
+
+            {Name:"Federico Cava Rose Brut", Desc:"DO Cava | Marques de la Concordia | Hiszpania", Value:"5"},
+            {Name:"Ferrari", Desc:"DOC Trentino | Ferrari | Włochy", Value:"5"},
+
+            {Name:"Olmeca Silver", Desc:"40ml", Value:"1"},
+            {Name:"Olmeca Gold", Desc:"40ml", Value:"1"},
+            {Name:"Jose Cuervo Silver Blue Agave", Desc:"40ml", Value:"1"},
+            {Name:"Jose Cuervo Especial", Desc:"40ml", Value:"1"},
+            {Name:"Sierra Blanco", Desc:"40ml", Value:"1"},
+            {Name:"Sierra Oro", Desc:"40ml", Value:"1"},
+
+            {Name:"Corona", Desc:"0.33 but.", Value:"2"},
+            {Name:"Bohemia Clasica Lager", Desc:"0.5 but", Value:"2"},
+            {Name:"Sol", Desc:"0.33 but.", Value:"2"},
+            {Name:"Modelo", Desc:"0.33 but.", Value:"2"},
+            {Name:"Dia De Los Muertos Porter", Desc:"0.5 but", Value:"2"},
+            
+        ],
+        Titles:[
+            {Title:"Tequilas", Desc:"czyli meksykańska wódka na agawie", Value:"1"},
+            {Title:"Cerveza / Piwo", Desc:"", Value:"2"},
+            {Title:"Wino czerwone", Desc:"", Value:"3"},
+            {Title:"Wino białe", Desc:"", Value:"4"},
+            {Title:"Wino musujące", Desc:"", Value:"5"},
+    ],
+        drink: "1",
+    },
+    computed: {
+        chooseDrink: function () {
+
+            var drink = this.drink;
+            
+            return this.Drinks.filter(function (item) {
+                if (item.Value == drink) {
+                    
+                    return item
+
+                }
+            })
+        },
+        chooseTitle: function () {
+            var drink = this.drink;
+            return this.Titles.filter(function (item) {
+                if (item.Value == drink) {
+
+                    return item
+
+                }
+            })
+        }
+    }
+});
+
 // select

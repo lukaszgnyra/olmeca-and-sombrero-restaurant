@@ -107,6 +107,32 @@
             </div>
             
         </div> 
+        <div id="appDrinks">
+            <aside>Napoje: </aside>
+            <div class="application">
+                <span>Wybierz: </span>
+                <div class="custom-select">
+                    <select v-model="drink">
+                        <option value="1">Tequilas</option>
+                        <option value="2">Cerveza / Piwo</option>
+                        <option value="3">Wino czerwone</option>
+                        <option value="4">Wino białe</option>
+                        <option value="5">Wino musujące</option>
+                    </select>
+                </div>
+           
+            <div v-for="title in chooseTitle">
+                {{title.Desc}}
+            </div>
+            <div class="dish-container" v-for="item in chooseDrink">
+                <div class="dish">
+                <div class="dishName"> ~ {{item.Name}}</div>
+                <div class="dishDescription">{{item.Desc}}</div>
+            </div>
+        </div>
+            </div>
+            
+        </div> 
     
     <footer>
         <div class="row">
