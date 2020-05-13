@@ -212,6 +212,7 @@ body {
    text-align: center;
     align-items: center;
     
+    
   
   
     
@@ -235,6 +236,8 @@ body {
 .us{
 }
 .amigo{
+    width: 100%;
+    justify-content: center;
 }
 
 
