@@ -597,6 +597,9 @@ option{
         margin-bottom: 20px;
         
     }
+    .footercolumn-skull{
+        display: none;
+    }
 
 }
 @media (max-width:868px) {
