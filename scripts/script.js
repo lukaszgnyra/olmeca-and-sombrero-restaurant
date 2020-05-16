@@ -1,3 +1,4 @@
+Vue.config.devtools = true;
 const trigger = document.querySelector(".mainnav")
 
 function changeClass() {
