@@ -663,6 +663,12 @@ option{
         flex: 100%;
         min-width: 100%;
     }
+    .mainpagerow{
+        flex-wrap: wrap;
+    }
+    .paragraph{
+        min-height: 200px;
+    }
 }
 @media (max-width:450px){
     .dish-container{
