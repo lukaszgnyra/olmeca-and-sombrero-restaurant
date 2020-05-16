@@ -669,6 +669,12 @@ option{
     .paragraph{
         min-height: 200px;
     }
+    .order1{
+        order:1;
+    }
+    .order2{
+        order:2;
+    }
 }
 @media (max-width:450px){
     .dish-container{
