@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Great+Vibes&family=Kaushan+Script&family=Kumar+One+Outline&family=Monoton&family=Parisienne&family=Satisfy&family=Special+Elite&family=Patrick+Hand+SC"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49242c5bc9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <link rel="shortcut icon" type="image/png" href="img/logo3.png">
+    <title>Olmeca & Sombrero</title>
+</head>
+
+<body>
+    <header class="mainheader2">
+        <h3 class="restaurant-h3">Restauracja </h3>
+        <div class="name2 box2">
+           <div class="logo2">
+
+           </div>
+           <div class="title-container">
+                <div class="olmeca2">Olmeca</div>
+                &
+                <div class="sombrero2">Sombrero</div>
+            </div>
+ 
+            
+        </div>
+        <div class="nameimg box1">
+
+        </div>
+    </header>
+    <div class="navigation">
+    <div onclick="changeClass()" class="menu-trigger">
+        <i class="fas fa-bars"></i>
+    </div>
+         <nav class="mainnav">
+            <a href="#" onclick="closeMenu()"><i class="fas fa-times"></i></a>
+            <a href="./menu.html">Start</a>
+            <a href="#">Menu</a>
+            <a href="#">Catering</a>
+            <a href="#">Kontakt</a>
+        </nav> 
+    </div>
+    
+        <div id="app" class="box2">
+            <aside>Menu: </aside>
+            <div class="application">
+                <span>Wybierz: </span>
+                <div class="custom-select">
+                    <select v-model="option">
+                        <option value="1">Entradas / Przystawki</option>
+                        <option value="2">Sopa / Zupy</option>
+                        <option value="3">Fajitas</option>
+                        <option value="4">Quesadillas</option>
+                        <option value="5">Tacos</option>
+                        <option value="6">Thamales</option>
+                        <option value="7">Burritos</option>
+                        <option value="8">Chimichanga</option>
+                        <option value="9">Postre / desery</option>
+                    </select>
+                </div>
+           
+            <div v-for="category in chooseTitle">
+                {{category.Desc}}
+            </div>
+            <div class="dish-container" v-for="item in chooseOption">
+                <div class="dish">
+                <div class="dishName"> ~ {{item.Name}}</div>
+                <div class="dishDescription">{{item.Description}}</div>
+            </div>
+        </div>
+            </div>
+            
+        </div> 
+        <div id="appDrinks" class="box1">
+            <aside>Napoje: </aside>
+            <div class="application">
+                <span>Wybierz: </span>
+                <div class="custom-select">
+                    <select v-model="drink">
+                        <option value="1">Tequilas</option>
+                        <option value="2">Cerveza / Piwo</option>
+                        <option value="3">Wino czerwone</option>
+                        <option value="4">Wino białe</option>
+                        <option value="5">Wino musujące</option>
+                    </select>
+                </div>
+           
+            <div v-for="title in chooseTitle">
+                {{title.Desc}}
+            </div>
+            <div class="dish-container" v-for="item in chooseDrink">
+                <div class="dish">
+                <div class="dishName"> ~ {{item.Name}}</div>
+                <div class="dishDescription">{{item.Desc}}</div>
+            </div>
+        </div>
+            </div>
+            
+        </div> 
+    
+    <footer>
+        <div class="footerrow">
+                
+                <div class="footercolumn footercolumn-skull"> 
+                        <img src="./img/logo3.png" alt="">
+                </div>
+                <div class="footercolumn">
+                    <div class="little-logo">
+                        <div>Olmeca</div>
+                        &
+                        <div>Sombrero</div>
+                    </div>
+                    <p>Kontakt</p>
+                    <p>ul. Zmyślona 10</p>
+                    <p>80-180 Gdańsk</p>
+                    <p>Zadzwoń i zarezerwuj stolik</p>
+                    <p>Tel. 555 555 555</p>
+                    <p>E-mail: kontakt@olmecaandsobrero.pl</p>
+                </div>
+                 <div class="footercolumn">
+                    Godziny otwarcia:
+                    <p>Pn. - Czw. 10.00 - 22.00</p>
+                    <p>Pt. - Sb. 10.00 - 24.00</p>
+                    <p>Ndz. 12.00 - 22.00</p>
+                 </div>
+                
+        </div>
+            
+        
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

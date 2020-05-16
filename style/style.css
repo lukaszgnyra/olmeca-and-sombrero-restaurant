@@ -327,9 +327,7 @@ width: 100%;
 select{
     outline: none;
 }
-option{
-    outline: none;
-}
+
 #app{
     display: flex;
     flex-direction: row;
@@ -339,6 +337,8 @@ option{
     align-content: center;
     justify-content: center;
     padding: 40px 0px;
+    border: black solid;
+    margin-top: 40px;
     
 }
 #app aside{
@@ -360,6 +360,18 @@ option{
 }
 
 /* appDrinks */
+#appDrinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color:  rgb(255, 140, 32);
+    align-content: center;
+    justify-content: center;
+    padding: 40px 0px;
+    border: black solid;
+    margin-top: 40px;
+}
 #appDrinks aside{
     height: 10%;
     flex: 30%;
@@ -368,6 +380,7 @@ option{
     align-self: center;
     font-size: 60px;
     font-family: "Bungee";
+    
     
 }
 
