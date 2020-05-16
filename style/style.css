@@ -1,4 +1,5 @@
-* {
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -331,14 +332,15 @@ select{
 #app{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
+    /* flex-wrap: wrap; */
+    
     background-color:  rgb(255, 140, 32);
-    align-content: center;
-    justify-content: center;
-    padding: 40px 0px;
+    /* align-content: center; */
+    /* justify-content: center; */
+    
     border: black solid;
     margin-top: 40px;
+    padding: 40px;
     
 }
 #app aside{
@@ -350,10 +352,12 @@ select{
     font-size: 60px;
     font-family: "Bungee";
     
+    
 }
 .application{
     flex: 70%;
-    padding: 0 20px;
+    padding-left: 15px;
+    /* padding: 0 20px; */
    
     /* background-color: rgb(255, 140, 32); */
     
@@ -363,12 +367,11 @@ select{
 #appDrinks{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    padding: 10px;
+    /* flex-wrap: wrap; */
+    padding: 40px;
     background-color:  rgb(255, 140, 32);
-    align-content: center;
-    justify-content: center;
-    padding: 40px 0px;
+    
+    
     border: black solid;
     margin-top: 40px;
 }
@@ -571,19 +574,15 @@ select{
     background-size: cover;
     border: black solid;
 }
-.restaurant-h3{
+.restaurant-span{
     position: absolute;
     top: 20px;
     left: 6%;
     font-size: 50px;
     font-style: italic;
     font-family: "Parisienne";
+    font-weight: bold;
 }
-
-
-
-
-
 
 /* media */
 @media (min-width: 820px) {
@@ -613,7 +612,9 @@ select{
     .footercolumn-skull{
         display: none;
     }
-
+    #app, #appDrinks{
+        flex-wrap: wrap;
+    }
 }
 @media (max-width:868px) {
     .mainnav a:first-child{
@@ -701,7 +702,7 @@ select{
 @media (max-width:450px){
     .dish-container{
         padding-top: 15px;
-        width: 100%;
+       
         border: none;
         min-height: 90px;
         padding-bottom: 15px;
@@ -709,3 +710,5 @@ select{
     
     
 }
+
+
