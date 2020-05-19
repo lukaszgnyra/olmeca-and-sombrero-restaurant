@@ -375,10 +375,11 @@ select{
     /* flex-wrap: wrap; */
     padding: 40px;
     background-color:  rgb(255, 140, 32);
-    
+    width: 100%;
     
     border: black solid;
     margin-top: 40px;
+    justify-content: center;
 }
 #appDrinks aside{
     height: 10%;
@@ -593,6 +594,11 @@ select{
 @media (min-width: 820px) {
     .menu-trigger {
         display:none;
+    }
+}
+@media (max-width: 1010px){
+    .mainnav a {
+        margin: 0 30px;
     }
 }
 
