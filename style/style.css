@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
@@ -329,6 +330,9 @@ width: 100%;
 
 
 /* app */
+#app, #appDrinks{
+    font-size: 16px;
+}
 select{
     outline: none;
 }
@@ -459,8 +463,9 @@ select{
 
     footer .footerrow{
         width: 100%;
-        background-color:red;
+        background-color: rgb(226, 14, 14);
         padding-bottom: 15px;
+        justify-content: center;
         
     }
 
