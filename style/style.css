@@ -1,4 +1,8 @@
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -335,12 +339,13 @@ select{
     /* flex-wrap: wrap; */
     
     background-color:  rgb(255, 140, 32);
-    /* align-content: center; */
-    /* justify-content: center; */
+     align-content: center;
+     justify-content: center; 
     
     border: black solid;
     margin-top: 40px;
     padding: 40px;
+    
     
 }
 #app aside{
@@ -601,6 +606,7 @@ select{
         position: static;
         margin: 0 auto;
         transform: translate(0,0);
+      min-width: 320px;
 
     }
     .mainheader2{
@@ -614,6 +620,13 @@ select{
     }
     #app, #appDrinks{
         flex-wrap: wrap;
+        padding: 20px;
+    }
+    #app aside, #appDrinks aside{
+        font-size: 40px;
+    }
+    .application{
+        font-size: 0.7em;
     }
 }
 @media (max-width:868px) {
@@ -698,15 +711,16 @@ select{
     .order2{
         order:2;
     }
-}
-@media (max-width:450px){
     .dish-container{
-        padding-top: 15px;
+        padding-top: 10px;
        
         border: none;
         min-height: 90px;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
+}
+@media (max-width:450px){
+    
     
     
 }
