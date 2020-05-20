@@ -335,8 +335,21 @@ width: 100%;
 }
 select{
     outline: none;
+    font: 400 16px "Patrick Hand SC";
+    -webkit-appearance: none;
 }
-
+option:hover{
+    background-color: #fff;
+}
+select option:checked:after {
+    content: attr(title);
+    background: #666;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border: none;
+}
 #app{
     display: flex;
     flex-direction: row;
@@ -349,6 +362,7 @@ select{
     border: black solid;
     margin-top: 40px;
     padding: 40px;
+    width: 100%;
     
     
 }
@@ -360,6 +374,7 @@ select{
     align-self: center;
     font-size: 60px;
     font-family: "Bungee";
+    margin-bottom: 20px;
     
     
 }
@@ -407,6 +422,11 @@ select{
     padding-top: 10px;
     font-size: 1.2em;
     padding-bottom: 5px;
+    
+}
+.dishName div{
+    float: right;
+    margin-right: 20px;
 }
 /* select */
 .application span{

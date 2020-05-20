@@ -70,7 +70,7 @@
             </div>
             <div class="dish-container" v-for="item in chooseOption">
                 <div class="dish">
-                <div class="dishName"> ~ {{item.Name}}</div>
+                <div class="dishName"> ~ {{item.Name}} <div>{{item.Price}}</div></div>
                 <div class="dishDescription">{{item.Description}}</div>
             </div>
         </div>
@@ -96,7 +96,7 @@
             </div>
             <div class="dish-container" v-for="item in chooseDrink">
                 <div class="dish">
-                <div class="dishName"> ~ {{item.Name}}</div>
+                <div class="dishName"> ~ {{item.Name}} <div>{{item.Price}}</div></div>
                 <div class="dishDescription">{{item.Desc}}</div>
             </div>
         </div>
