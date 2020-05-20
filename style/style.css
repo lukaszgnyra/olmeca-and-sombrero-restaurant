@@ -367,14 +367,14 @@ select option:checked:after {
     
 }
 #app aside{
-    height: 10%;
+    /* height: 10%; */
     flex: 30%;
     text-align: center;
     line-height: 100px;
     align-self: center;
     font-size: 60px;
     font-family: "Bungee";
-    margin-bottom: 20px;
+   
     
     
 }
@@ -385,6 +385,9 @@ select option:checked:after {
    
     /* background-color: rgb(255, 140, 32); */
     
+}
+#app, #appDrinks{
+    margin: 5px;
 }
 
 /* appDrinks */
@@ -401,7 +404,6 @@ select option:checked:after {
     justify-content: center;
 }
 #appDrinks aside{
-    height: 10%;
     flex: 30%;
     text-align: center;
     line-height: 100px;
@@ -484,19 +486,26 @@ select option:checked:after {
     footer .footerrow{
         width: 100%;
         background-color: rgb(226, 14, 14);
-        padding-bottom: 15px;
         justify-content: center;
+        align-items: center;
+       align-content: center;
+        display: flex;
         
     }
 
     footer .footercolumn{
         flex: 33.3%;
-        padding: 0px;
+        padding:20px 0px;
         text-align: center;
     }
-    footer .footercolumn img{
-        width: 60%;
-        margin: 0 auto;
+    
+    .footercolumn-skull{
+       background-image: url(../img/logo3.png);
+       background-position: center;
+       background-size: contain;
+       background-repeat: no-repeat;
+       height: 300px;
+      
     }
     .little-logo{
         display: flex;
@@ -518,7 +527,11 @@ select option:checked:after {
         font-size: 17px;
     }
 
-
+    footer .footerrow-bottom{
+        background-color: rgb(56, 0, 0);
+        line-height: 40px;
+        color: #fff;
+    }
 
 
 
@@ -651,13 +664,14 @@ select option:checked:after {
     }
     #app, #appDrinks{
         flex-wrap: wrap;
-        padding: 20px;
+        padding: 10px;
+        margin: 5px;
     }
     #app aside, #appDrinks aside{
         font-size: 40px;
     }
     .application{
-        font-size: 0.7em;
+        font-size: 12px;
     }
 }
 @media (max-width:868px) {
@@ -750,10 +764,14 @@ select option:checked:after {
         padding-bottom: 10px;
     }
 }
-@media (max-width:450px){
-    
-    
-    
+@media (max-width: 576px){
+    .footerrow{
+        display: flex;
+        
+        flex-wrap: wrap;
+    }
+    .footercolumn{
+        flex: 100%;
+        min-width: 100%;
+    }
 }
-
-
