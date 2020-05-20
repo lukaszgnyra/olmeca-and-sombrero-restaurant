@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <header class="mainheader2">
+    <header class="mainheader">
         <span class="restaurant-span">Restauracja </span>
-        <div class="name2 box2">
+        <div class="name box2">
            <div class="logo2">
 
            </div>
@@ -46,38 +46,6 @@
             <a href="#">Kontakt</a>
         </nav> 
     </div>
-    <!-- <header class="mainheader">
-        
-        <div class="logo">
-            <a href="./index.html"><img class="logoImg" src="./img/logo3.png" alt="logo"></a>
-        </div>
-        <div class="name">
-            <div class="cactus"><img class="cactusImg2" src="./img/cactus1.png" alt=""></div>
-           <a href="./index.html">
-            <div class="olmeca">Olmeca</div>
-            &
-            <div class="sombrero">Sombrero</div>
-        </a>
-
-            <div class="cactus"><img class="cactusImg" src="./img/cactus1.png" alt=""></div>
-        
-    </div>
-    <div onclick="changeClass()" class="menu-trigger">
-        <i class="fas fa-bars"></i>
-    </div>
-         <nav class="mainnav">
-            <a href="#" onclick="closeMenu()"><i class="fas fa-times"></i></a>
-            <a href="./menu.html">Menu</a>
-            <a href="#">Koktajle i wina</a>
-            <a href="#">Catering</a>
-            <a href="#">Kontakt</a>
-        </nav> 
-    
-    </header> -->
-
-    
-
-
     <div class="flex-container">
         <div class="mainpagerow">
             <div class="mainpagecolumn column-flex-60">
@@ -86,11 +54,6 @@
                     <div>nowej na mapie naszego miasta restauracji meksykańskiej</div>
                 </div>
             </div>
-            <!-- <div class="mainpagecolumn column-flex-40">
-                <div class="photo welcomePhoto paragraph box1">
-
-                </div>
-            </div> -->
         </div>
         <div class="mainpagerow ">
             <div class="mainpagecolumn column-flex-40">
@@ -137,107 +100,8 @@
             </div>
             
         </div>
-        <!-- <aside class="leftbar">
-            <div class="leftbarphoto"></div>
-            <div class="leftbarphoto"></div>
-            <div class="leftbarphoto"></div>
-            <div class="leftbarphoto"></div>
-         <div class="leftbarphoto"><img src="./img/cactus.jpg" alt=""></div>
-            <div class="leftbarphoto"><img src="./img/taco2.jpg" alt=""></div>
-            <div class="leftbarphoto"><img src="./img/tequila.jpg" alt=""></div>
-            <div class="leftbarphoto"><img src="./img/sombrero.jpg" alt=""></div> 
-        </aside>
-        <section class="mainpage">
-            <div class="row">
-                <div class="welcome paragraph">
-                    <div>Witamy w "Olmeca & Sombrero</div>
-                    <div>nowej na mapie naszego miasta restauracji meksykańskiej</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <div class="kitchen paragraph">Naszą kuchnię charakteryzują oryginalne przepisy rodem ze słonecznego Mexico, a szef
-                        naszej kuchni -
-                        Eduardo de Flamenco zadba o każdy szczegół Waszych pysznych dań.</div>
-                    <div class="jalapeno paragraph">Współpracujemy tylko z regionalnymi dostawcami mięsa i warzyw, a najlepsze przyprawy,
-                        zioła, papryczki
-                        jalapeno oraz avocado sprowadzamy bezpośrednio z Jukatanu i Tulum.</div>
-                </div>
-                <div class="column">
-                    <div class="us paragraph">Zapoznaj się z naszą bogatą ofertą i rozsmakuj w najlepszych tortillach, salsie, guacamole,
-                        grillowanych
-                        mięsach, rybach i warzywach. Skosztuj również naszych tequil (mamy szeroką gamę tych wódek z agawy) oraz
-                        meksykańskich piw i południowo-amerykańskich win.</div>
-                    <div class="amigo paragraph">Zapraszamy Amigo!</div>
-                </div>
-            </div>
-
-            
-
-            
-            
- -->
-
-        </section>
-        
+        </section> 
     </div>
-        <!-- <div id="app">
-            <aside>Menu: </aside>
-            <div class="application">
-                <span>Wybierz: </span>
-                <div class="custom-select">
-                    <select v-model="option">
-                        <option value="1">Entradas / Przystawki</option>
-                        <option value="2">Sopa / Zupy</option>
-                        <option value="3">Fajitas</option>
-                        <option value="4">Quesadillas</option>
-                        <option value="5">Tacos</option>
-                        <option value="6">Thamales</option>
-                        <option value="7">Burritos</option>
-                        <option value="8">Chimichanga</option>
-                        <option value="9">Postre / desery</option>
-                    </select>
-                </div>
-           
-            <div v-for="category in chooseTitle">
-                {{category.Desc}}
-            </div>
-            <div class="dish-container" v-for="item in chooseOption">
-                <div class="dish">
-                <div class="dishName"> ~ {{item.Name}}</div>
-                <div class="dishDescription">{{item.Description}}</div>
-            </div>
-        </div>
-            </div>
-            
-        </div> 
-        <div id="appDrinks">
-            <aside>Napoje: </aside>
-            <div class="application">
-                <span>Wybierz: </span>
-                <div class="custom-select">
-                    <select v-model="drink">
-                        <option value="1">Tequilas</option>
-                        <option value="2">Cerveza / Piwo</option>
-                        <option value="3">Wino czerwone</option>
-                        <option value="4">Wino białe</option>
-                        <option value="5">Wino musujące</option>
-                    </select>
-                </div>
-           
-            <div v-for="title in chooseTitle">
-                {{title.Desc}}
-            </div>
-            <div class="dish-container" v-for="item in chooseDrink">
-                <div class="dish">
-                <div class="dishName"> ~ {{item.Name}}</div>
-                <div class="dishDescription">{{item.Desc}}</div>
-            </div>
-        </div>
-            </div>
-            
-        </div>  -->
-    
         <footer>
             <div class="footerrow">
                     

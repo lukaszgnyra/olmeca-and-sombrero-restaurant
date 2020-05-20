@@ -5,115 +5,18 @@
     scroll-behavior: smooth;
 }
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: "Patrick Hand SC", Arial, Helvetica, sans-serif;
     font-size: 20px;
     letter-spacing: 4px;
-
-}
-
-body {
     background-color: rgb(255, 140, 32);
-    /* background-image: url(/img/flag.jpg); */
     background-attachment: fixed;
     min-width: 320px;
-    /* max-width: 1200px; */
     margin: 0 auto;
     background-size: cover;
     background-position: center;
     background-image: url(/img/background.png);
-}
-
-/* header */
-.mainheader {
-    display: flex;
-    align-items: center;
-    height: 350px;
-    /* background-color: red; */
-    overflow: hidden;
-    background: rgba(200,200,200,0.8);
-    
-}
-
-.name {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 50px;
-    flex: 70%;
-    /* background-color: red; */
-    position: relative;
-    
-    align-items: center;
-}
-.name a{
-    color: black;
-    text-decoration: none;
-}
-.logo {
-   
-    flex: 30%;
-    position: relative;
-    /* background-color: yellow; */
-    height: 100%;
-    z-index: 2;
-    border: 6px dashed black;
-    border-bottom: none;
-    border-right: none;
 
 }
-.logo a {
-    
-    cursor: pointer;
-    
-}
-
-.olmeca {
-    font-family: "Bungee";
-    line-height: 100px;
-    font-size: 90px;
-    font-weight: 100;
-
-}
-
-.sombrero {
-    font-family: "Parisienne";
-    font-size: 90px;
-    font-stretch: ultra-expanded;
-    line-height: 90px;
-    font-weight: 600;
-}
-
-
-
-.logoImg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 100%;
-
-}
-
-.cactusImg {
-    position: absolute;
-    right: 0;
-    top: -40px;
-    height: 400px;
-    z-index: 1;
-}
-.cactusImg2 {
-    position: absolute;
-    left: 0;
-    top: 0px;
-    height: 300px;
-    z-index: 1;
-}
-
-
-
 
 .mainnav {
     text-align: center;
@@ -139,7 +42,6 @@ body {
 
 .flex-container {
     display: flex;
-    /* overflow: hidden; */
     flex-wrap: wrap;
     margin-top: 15px;
     max-width: 1200px;
@@ -151,7 +53,6 @@ body {
     flex: 30%;
     justify-content: center;
     background-color: rgb(31, 233, 24);
-    /* border-right: 6px dashed black; */
     border-bottom: 6px dashed black;
     border-top: 6px dashed black;
     display: flex;
@@ -215,7 +116,6 @@ body {
     width: 70%;  
 }
 .welcomePhoto{
-    /* background-image: url("");  */
     background-size: cover;
 }
 
@@ -283,7 +183,7 @@ background-color: rgba(0, 99, 65);
 }
 
 
-/* trying mainpage */
+/* mainpage */
 
 
 .mainpagerow{
@@ -316,18 +216,6 @@ width: 100%;
 .column-flex-30{
     flex: 30%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* app */
 #app, #appDrinks{
@@ -457,29 +345,6 @@ select option:checked:after {
         display: block;
         background-color:rgb(252, 163, 61);
     }
-.footerrow {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    
-  }
-  
- 
-  .footercolumn {
-    flex: 100%;
-    max-width: 100%;
-    padding: 0 4px;
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: center;
-    
-  }
-
-
-
-
-
 
 /* footer */
 
@@ -490,6 +355,8 @@ select option:checked:after {
         align-items: center;
        align-content: center;
         display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
         
     }
 
@@ -534,16 +401,7 @@ select option:checked:after {
     }
 
 
-
-
-
-
-
-
-
-
-
-.mainheader2{
+.mainheader{
     
     min-height: 480px;
     position: relative;
@@ -552,7 +410,7 @@ select option:checked:after {
     
 }
 
-.name2{
+.name{
     
     
     background-color: #ddd;
@@ -645,7 +503,7 @@ select option:checked:after {
     .nameimg{
       display: none;
     }
-    .name2{
+    .name{
         width: 90%;
         position: static;
         margin: 0 auto;
@@ -653,7 +511,7 @@ select option:checked:after {
       min-width: 320px;
 
     }
-    .mainheader2{
+    .mainheader{
         margin-top: 10px;
         min-height: auto;
         margin-bottom: 20px;
@@ -731,7 +589,7 @@ select option:checked:after {
         border-right: 6px dashed black;
         flex: 100%;
     }
-    .name2{
+    .name{
         min-width:97% ;
     }
     .logo2{
