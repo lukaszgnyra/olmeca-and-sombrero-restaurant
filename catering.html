@@ -40,68 +40,23 @@
     <nav class="mainnav">
         <a href="./index.html" onclick="closeMenu()">Start</a>
         <a href="./menu.html" onclick="closeMenu()">Menu</a>
-        <a href="./catering.html" onclick="closeMenu()">Catering</a>
+        <a href="#" onclick="closeMenu()">Catering</a>
         <a href="#contact" onclick="closeMenu()">Kontakt</a>
     </nav> 
     </div>
     <div class="flex-container">
     
-        <div id="app" class="box2">
-            <aside>Menu: </aside>
-            <div class="application">
-                <span>Wybierz: </span>
-                <div class="custom-select">
-                    <select v-model="option">
-                        <option value="1">Entradas / Przystawki</option>
-                        <option value="2">Sopa / Zupy</option>
-                        <option value="3">Fajitas</option>
-                        <option value="4">Quesadillas</option>
-                        <option value="5">Tacos</option>
-                        <option value="6">Thamales</option>
-                        <option value="7">Burritos</option>
-                        <option value="8">Chimichanga</option>
-                        <option value="9">Postre / desery</option>
-                    </select>
-                </div>
-           
-            <div v-for="category in chooseTitle" class="dishName dish-description">
-                {{category.Desc}}
-            </div>
-            <div class="dish-container" v-for="item in chooseOption">
-                <div class="dish">
-                <div class="dishName"> ~ {{item.Name}} <div>{{item.Price}}</div></div>
-                <div class="dishDescription">{{item.Description}}</div>
-            </div>
-        </div>
-            </div>
-            
-        </div> 
-        <div id="appDrinks" class="box1">
-            <aside>Napoje: </aside>
-            <div class="application">
-                <span>Wybierz: </span>
-                <div class="custom-select">
-                    <select v-model="drink">
-                        <option value="1">Tequilas</option>
-                        <option value="2">Cerveza / Piwo</option>
-                        <option value="3">Wino czerwone</option>
-                        <option value="4">Wino białe</option>
-                        <option value="5">Wino musujące</option>
-                    </select>
-                </div>
-           
-            <div v-for="title in chooseTitle" class="dishName">
-                {{title.Desc}}
-            </div>
-            <div class="dish-container" v-for="item in chooseDrink">
-                <div class="dish">
-                <div class="dishName"> ~ {{item.Name}} <div>{{item.Price}}</div></div>
-                <div class="dishDescription">{{item.Desc}}</div>
-            </div>
-        </div>
-            </div>
-            
-        </div> 
+
+
+
+
+
+
+
+
+
+
+        
     </div>
     <footer>
         <div class="footerrow">

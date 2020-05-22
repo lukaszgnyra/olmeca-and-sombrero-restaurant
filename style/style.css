@@ -95,7 +95,7 @@ body {
 
 .paragraph {
     justify-content: center;
-    border: 3px solid white;
+    border: 3px solid #fff;
     box-shadow: 5px 5px 10px;
     text-align: center;
     width: 100%;
