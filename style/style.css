@@ -102,7 +102,6 @@ body {
     display: flex;
     align-items: center;
     padding: 25px;
-    font-size: 1.2em;
     margin-bottom: 10px;
     background-position: center;
     background-size: cover;
@@ -306,7 +305,9 @@ select option:checked:after {
 
     min-height: 90px;
 }
-
+.dish-description{
+    font-size: 20px;
+}
 .dishName {
     padding-top: 10px;
     font-size: 1.2em;
@@ -430,7 +431,7 @@ footer .footerrow-bottom {
     z-index: 1;
 }
 
-.logo2 {
+.logo {
     background-image: url(../img/logo3.png);
     background-position: center;
     background-size: contain;
@@ -552,18 +553,16 @@ footer .footerrow-bottom {
     .menu-trigger {
         display: block;
         position: fixed;
-        top: 15px;
-        right: 18px;
+        top: 5px;
+        right: 5px;
         z-index: 3;
         text-align: center;
-        width: 50px;
-        font-size: 40px;
+        font-size: 30px;
         background-color: rgb(255, 141, 65);
         display: flex;
         justify-content: center;
         margin: 0;
-        padding: 5px;
-        
+        padding: 3px 5px;
         letter-spacing: 0;
         border: solid black;
     }
@@ -615,7 +614,7 @@ footer .footerrow-bottom {
         min-width: 97%;
     }
 
-    .logo2 {
+    .logo {
         min-width: 30%;
     }
 

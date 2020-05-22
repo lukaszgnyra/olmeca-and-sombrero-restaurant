@@ -18,7 +18,7 @@
     <header class="mainheader">
         <span class="restaurant-span">Restauracja </span>
         <div class="name box2">
-           <div class="logo2">
+           <div class="logo">
 
            </div>
            <div class="title-container">
@@ -64,7 +64,7 @@
                     </select>
                 </div>
            
-            <div v-for="category in chooseTitle">
+            <div v-for="category in chooseTitle" class="dishName dish-description">
                 {{category.Desc}}
             </div>
             <div class="dish-container" v-for="item in chooseOption">
