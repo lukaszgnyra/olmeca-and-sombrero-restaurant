@@ -567,6 +567,7 @@ footer .footerrow-bottom {
         transition: .4s;
         display: flex;
         flex-direction: column;
+        transition-delay: .1s;
         
         justify-content: center;
     }
