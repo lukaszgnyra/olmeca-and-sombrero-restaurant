@@ -1,15 +1,22 @@
 Vue.config.devtools = true;
 const trigger = document.querySelector(".mainnav")
 
-function changeClass() {
-    trigger.classList.add("active");
-    document.querySelector(".menu-trigger").classList.add("unvisible");
+// function changeClass() {
+//     trigger.classList.add("active");
+//     document.querySelector(".menu-trigger").classList.add("unvisible");
+// }
+
+// function closeMenu() {
+//     trigger.classList.remove("active");
+//     document.querySelector(".menu-trigger").classList.remove("unvisible");
+
+// }
+function handleMenu() {
+    document.querySelector(".mainnav").classList.toggle("active");
 }
 
 function closeMenu() {
-    trigger.classList.remove("active");
-    document.querySelector(".menu-trigger").classList.remove("unvisible");
-
+    document.querySelector(".mainnav").classList.remove("active");
 }
 
 
