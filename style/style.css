@@ -553,9 +553,9 @@ footer .footerrow-bottom {
     }
 
     .mainnav {
-        background-color: orange;
+        background-color: rgb(252, 163, 61);
         text-align: center;
-
+        
         top: 0;
         left: 100%;
         font-size: 20px;
@@ -564,7 +564,7 @@ footer .footerrow-bottom {
         position: fixed;
         height: 100vh;
         z-index: 2;
-        transition: .4s;
+        transition: .3s;
         display: flex;
         flex-direction: column;
         transition-delay: .1s;
@@ -578,8 +578,8 @@ footer .footerrow-bottom {
         border: 2px solid black;
         margin: 1vw;
         color: black;
-        width: 100%;
-        float: left;
+        width: 80%;
+        margin: 10px auto;
 
     }
 
