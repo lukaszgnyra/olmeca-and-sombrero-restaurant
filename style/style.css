@@ -227,21 +227,7 @@ body {
 select {
     outline: none;
     font: 400 16px "Patrick Hand SC";
-    -webkit-appearance: none;
-}
-
-option:hover {
-    background-color: #fff;
-}
-
-select option:checked:after {
-    content: attr(title);
-    background: #666;
-    color: #fff;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    border: none;
+   
 }
 
 #app {
@@ -305,9 +291,7 @@ select option:checked:after {
 
     min-height: 90px;
 }
-.dish-description{
-    font-size: 20px;
-}
+
 .dishName {
     padding-top: 10px;
     font-size: 1.2em;
@@ -537,7 +521,7 @@ footer .footerrow-bottom {
     }
 
     .application {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -554,15 +538,16 @@ footer .footerrow-bottom {
         display: block;
         position: fixed;
         top: 5px;
-        right: 5px;
+        right: 3px;
         z-index: 3;
         text-align: center;
-        font-size: 30px;
+        font-size: 34px;
         background-color: rgb(255, 141, 65);
+        
         display: flex;
         justify-content: center;
         margin: 0;
-        padding: 3px 5px;
+        padding: 3px 4px;
         letter-spacing: 0;
         border: solid black;
     }
