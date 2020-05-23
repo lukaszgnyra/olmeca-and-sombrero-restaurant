@@ -334,6 +334,14 @@ select {
     background-color: rgb(252, 163, 61);
 }
 
+
+
+/* catering */
+.widthfull{
+    width: 1000px;
+    background-color: #fff;
+    float: left;
+}
 /* footer */
 
 footer .footerrow {
@@ -476,7 +484,7 @@ footer .footerrow-bottom {
     }
 }
 
-@media (max-width: 1010px) {
+@media (max-width: 1015px) {
     .mainnav a {
         margin: 0 30px;
     }

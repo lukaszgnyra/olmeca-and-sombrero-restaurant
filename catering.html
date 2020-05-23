@@ -12,6 +12,52 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <link rel="shortcut icon" type="image/png" href="img/logo3.png">
     <title>Olmeca & Sombrero</title>
+    <style>
+        .catering-container{
+            min-width: 320px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .catering-row{
+            width: 100%;
+            position: relative;
+            margin: 20px auto;
+            height: 550px;
+        }
+        .catering-photo{
+            width: 800px;
+           margin-bottom: 50px; 
+            height: 400px; 
+            position: absolute;
+            background-color: #fff;
+            border: 3px solid black;
+            
+            top: 0;
+        }
+        .catering-photo-first{
+            left: 0;
+        }
+        .catering-photo-second{
+            background-color: blue;
+            left: none;
+            right: 0;
+        }
+        .catering-paragraph{
+            
+            position: absolute;
+         border: 3px solid blue;
+         bottom: 30px;
+         left: 20%;
+         background-color:orange;
+         padding: 30px; 
+        }
+        @media (max-width:920px){
+            .catering-photo{
+                width: 600px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -44,11 +90,41 @@
         <a href="#contact" onclick="closeMenu()">Kontakt</a>
     </nav> 
     </div>
-    <div class="flex-container">
-    
-
-
-
+    <div class="catering-container">
+        <div class="catering-row">
+            <div class="catering-photo catering-photo-first box2"></div>
+            <div class="catering-paragraph box1"> Restauracja olmeca and Sombrero to firma tworzona przez profesjonalistów, osoby kochające gotowanie i kuchnię meksykańską. 
+                Jesteśmy entuzjastami dobrego smaku i mamy pełno ciekawych pomysłów. 
+                Zrealizowaliśmy dziesiątki projektów, mnóstwo udanych eventów. Obsługujemy zarówno uroczystości prywatne jak i pracownicze,
+                 czy biznesowe. Charakteryzuje nas wysoka jakość potraw, szybka i kulturalna obsługa oraz wyjątkowa oprawa zewnętrzna spotkania 
+                 w meksykańskim stylu.
+             </div>
+        </div>
+        <div class="catering-row">
+            <div class="catering-photo catering-photo-second box2"></div>
+            <div class="catering-paragraph box3">
+                Oferujemy Państwu nasz catering jako profesjonalną i kompleksową usługę gastronomiczną. Korzystamy z wieloletniego 
+                    doświadczenia, dysponujemy nowoczesnym zapleczem kuchennym, a nasz wykwalifikowany personel zadba o to, aby Państwo oraz 
+                    zaproszeni goście byli zadowoleni. Charakteryzuje nas wysoka jakość potraw, szybka i kulturalna obsługa oraz wyjątkowa oprawa
+                     zewnętrzna spotkania.
+            </div>
+        </div>
+        <div class="catering-row">
+            <div class="catering-photo box2"></div>
+            <div class="catering-paragraph box1"> 
+                <div>Obsługujemy między innymi:</div>
+                <div>-urodziny,</div>
+                <div>-imprezy jubileuszowe,</div>
+                <div>-spotkania biznesowe,</div>
+                <div>-szkolenia,</div>
+                <div> -spotkania integracyjne.</div>
+            </div>
+        </div>
+       
+       
+        
+ 
+       
 
 
 
