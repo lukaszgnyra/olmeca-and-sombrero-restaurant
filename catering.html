@@ -32,26 +32,60 @@
             position: absolute;
             background-color: #fff;
             border: 3px solid black;
-            
+            background-position: center;
+            background-size: cover;
+        
             top: 0;
-        }
-        .catering-photo-first{
-            left: 0;
-        }
-        .catering-photo-second{
-            background-color: blue;
-            left: none;
-            right: 0;
         }
         .catering-paragraph{
             
             position: absolute;
-         border: 3px solid blue;
+         border: 3px solid #000;
          bottom: 30px;
-         left: 20%;
          background-color:orange;
          padding: 30px; 
         }
+        .catering-photo-first{
+            left: 0;
+            background-image: url(./img/taco.jpg);
+        }
+        .catering-paragraph-first{
+            left: 20%;
+            
+        }
+        .catering-photo-second{
+            background-image: url("./img/kitchen.jpg");
+            right: 0;
+            background-position: center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        .catering-paragraph-second{
+            left: 0;
+            width: 80%;
+        }
+        .catering-photo-third{
+            background-image: url("./img/sombrero.jpg");
+            
+        }
+        .catering-paragraph-third{
+            left: 50%;
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+       .row-third{
+           height: 450px;
+       }
+      .catering-row-four{
+          height: 100px;
+      }
+      .catering-paragraph-four{
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          height: 100px;
+      }
         @media (max-width:920px){
             .catering-photo{
                 width: 600px;
@@ -92,8 +126,9 @@
     </div>
     <div class="catering-container">
         <div class="catering-row">
+         
             <div class="catering-photo catering-photo-first box2"></div>
-            <div class="catering-paragraph box1"> Restauracja olmeca and Sombrero to firma tworzona przez profesjonalistów, osoby kochające gotowanie i kuchnię meksykańską. 
+            <div class="catering-paragraph catering-paragraph-first box1"> Restauracja olmeca and Sombrero to firma tworzona przez profesjonalistów, osoby kochające gotowanie i kuchnię meksykańską. 
                 Jesteśmy entuzjastami dobrego smaku i mamy pełno ciekawych pomysłów. 
                 Zrealizowaliśmy dziesiątki projektów, mnóstwo udanych eventów. Obsługujemy zarówno uroczystości prywatne jak i pracownicze,
                  czy biznesowe. Charakteryzuje nas wysoka jakość potraw, szybka i kulturalna obsługa oraz wyjątkowa oprawa zewnętrzna spotkania 
@@ -101,17 +136,18 @@
              </div>
         </div>
         <div class="catering-row">
+            
             <div class="catering-photo catering-photo-second box2"></div>
-            <div class="catering-paragraph box3">
+            <div class="catering-paragraph catering-paragraph-second box3">
                 Oferujemy Państwu nasz catering jako profesjonalną i kompleksową usługę gastronomiczną. Korzystamy z wieloletniego 
                     doświadczenia, dysponujemy nowoczesnym zapleczem kuchennym, a nasz wykwalifikowany personel zadba o to, aby Państwo oraz 
                     zaproszeni goście byli zadowoleni. Charakteryzuje nas wysoka jakość potraw, szybka i kulturalna obsługa oraz wyjątkowa oprawa
                      zewnętrzna spotkania.
             </div>
         </div>
-        <div class="catering-row">
-            <div class="catering-photo box2"></div>
-            <div class="catering-paragraph box1"> 
+        <div class="catering-row row-third">
+            <div class="catering-photo catering-photo-third box2"></div>
+            <div class="catering-paragraph catering-paragraph-third box1"> 
                 <div>Obsługujemy między innymi:</div>
                 <div>-urodziny,</div>
                 <div>-imprezy jubileuszowe,</div>
@@ -119,6 +155,9 @@
                 <div>-szkolenia,</div>
                 <div> -spotkania integracyjne.</div>
             </div>
+        </div>
+        <div class="catering-row catering-row-four">
+            <div class="catering-paragraph catering-paragraph-four box3">Zapraszamy do kontaktu!</div>
         </div>
        
        
