@@ -98,6 +98,9 @@
             }
         }
         @media (max-width:868px){
+            .navigation{
+                margin-bottom: 0;
+            }
             .catering-photo{
                 display: none;
             }
@@ -109,14 +112,34 @@
                 transform: translate(0,0);
             }
             .catering-paragraph-four{
-                width: auto;
+                padding: 0;
+                line-height: 100px;
+                text-align: center;
             }
             .catering-row{
                 height: auto;
             }
             .catering-row-four{
                  height: 106px;
+                
             }
+            .catering-paragraph-first{
+                position: relative;
+                left: 0;
+                background-image: url(./img/taco.jpg);
+                padding: 0;
+                overflow: hidden;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+    
+            }
+            .paragraph-text{
+                position: relative;
+                background: radial-gradient(rgba(255, 181, 181, 0.767) 100%,rgba(255, 255, 255, 0) 100%);
+                padding: 50px;
+            }
+           
         }
         @media (max-width: 576px){
             body{
@@ -124,15 +147,26 @@
             }
             .catering-paragraph{
                 width: 99%;
-                padding: 15px;
                 
+            }
+            .catering-paragraph-four{
+                padding: 0;
+                line-height: 100px;
+                text-align: center;
+            }
+            .catering-row-four{
+                line-height: 70px;
+                padding: 15px auto;
+              
             }
         }
         @media(max-width: 440px){
             .catering-paragraph{
                 font-size: 16px;
             }
-          
+            .paragraph-text{
+               padding: 20px;
+            }
 
         }
     </style>
@@ -169,24 +203,29 @@
     </nav> 
     </div>
     <div class="catering-container">
-        <div class="catering-row">
+        <div class="catering-row no-margin-top">
          
             <div class="catering-photo catering-photo-first box2"></div>
-            <div class="catering-paragraph catering-paragraph-first box1"> Restauracja olmeca and Sombrero to firma tworzona przez profesjonalistów, osoby kochające gotowanie i kuchnię meksykańską. 
+            <div class="catering-paragraph catering-paragraph-first box1">
+                <div class="paragraph-text">
+                Restauracja olmeca and Sombrero to firma tworzona przez profesjonalistów, osoby kochające gotowanie i kuchnię meksykańską. 
                 Jesteśmy entuzjastami dobrego smaku i mamy pełno ciekawych pomysłów. 
                 Zrealizowaliśmy dziesiątki projektów, mnóstwo udanych eventów. Obsługujemy zarówno uroczystości prywatne jak i pracownicze,
                  czy biznesowe. Charakteryzuje nas wysoka jakość potraw, szybka i kulturalna obsługa oraz wyjątkowa oprawa zewnętrzna spotkania 
                  w meksykańskim stylu.
+                </div>
              </div>
         </div>
         <div class="catering-row">
             
             <div class="catering-photo catering-photo-second box2"></div>
             <div class="catering-paragraph catering-paragraph-second box3">
+                <div>
                 Oferujemy Państwu nasz catering jako profesjonalną i kompleksową usługę gastronomiczną. Korzystamy z wieloletniego 
                     doświadczenia, dysponujemy nowoczesnym zapleczem kuchennym, a nasz wykwalifikowany personel zadba o to, aby Państwo oraz 
                     zaproszeni goście byli zadowoleni. Charakteryzuje nas wysoka jakość potraw, szybka i kulturalna obsługa oraz wyjątkowa oprawa
                      zewnętrzna spotkania.
+                    </div>
             </div>
         </div>
         <div class="catering-row row-third">

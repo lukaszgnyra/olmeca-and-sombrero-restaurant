@@ -544,7 +544,9 @@ footer .footerrow-bottom {
 }
 
 @media (max-width:868px) {
-    
+    .no-margin-top{
+        margin-top: 0;
+    }
 
     .sombrero,
     .olmeca {
