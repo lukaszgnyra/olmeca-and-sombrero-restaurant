@@ -35,22 +35,24 @@
             background-position: center;
             background-size: cover;
         
-            top: 0;
+            
         }
         .catering-paragraph{
             
             position: absolute;
          border: 3px solid #000;
-         bottom: 30px;
+         
          background-color:orange;
          padding: 30px; 
         }
         .catering-photo-first{
             left: 0;
             background-image: url(./img/taco.jpg);
+            top: 0;
         }
         .catering-paragraph-first{
             left: 20%;
+            bottom: 30px;
             
         }
         .catering-photo-second{
@@ -60,6 +62,7 @@
             background-size: 100% 100%;
             background-repeat: no-repeat;
             background-size: auto;
+            bottom: 0;
         }
         .catering-paragraph-second{
             left: 0;
@@ -67,12 +70,15 @@
         }
         .catering-photo-third{
             background-image: url("./img/sombrero.jpg");
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
             
         }
         .catering-paragraph-third{
-            left: 50%;
-            bottom: 50%;
-            transform: translateY(50%);
+            left:0;
+            top: -60px;
+           
         }
        .row-third{
            height: 450px;
@@ -90,6 +96,38 @@
             .catering-photo{
                 width: 600px;
             }
+        }
+        @media (max-width:868px){
+            .catering-photo{
+                display: none;
+            }
+            .catering-paragraph{
+                position: static;
+                width: 80%;
+                margin: 0 auto;
+                padding: 50px auto;
+                transform: translate(0,0);
+            }
+            .catering-row{
+                height: auto;
+            }
+            .catering-row-four{
+                 height: 106px;
+            }
+        }
+        @media (max-width: 576px){
+            .catering-paragraph{
+                width: 99%;
+                padding: 15px;
+                
+            }
+        }
+        @media(max-width: 440px){
+            .catering-paragraph{
+                font-size: 14px;
+            }
+          
+
         }
     </style>
 </head>
@@ -157,7 +195,7 @@
             </div>
         </div>
         <div class="catering-row catering-row-four">
-            <div class="catering-paragraph catering-paragraph-four box3">Zapraszamy do kontaktu!</div>
+            <div class="catering-paragraph catering-paragraph-four box3">Zapraszamy do kontaktu, Amigo!</div>
         </div>
        
        

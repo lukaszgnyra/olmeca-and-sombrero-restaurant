@@ -105,7 +105,9 @@ body {
     margin-bottom: 10px;
     background-position: center;
     background-size: cover;
-    background-color: rgba(200, 200, 200, .9);
+    /* background-color: rgba(200, 200, 200, .9);
+    background-color: rgba(125, 245, 70, 0.5); */
+
     transition: .2s;
     margin: 20px;
 }
@@ -114,6 +116,16 @@ body {
     display: flex;
     flex-direction: column;
     width: 70%;
+    background-color: rgba(125, 245, 70, 0.5);
+}
+.jalapeno{
+    background-color: rgba(255, 88, 88, 0.5);
+}
+.us{
+    background-color: rgba(70, 233, 245, 0.5);
+}
+.kitchen{
+    background-color: rgba(245, 233, 70, 0.5);
 }
 
 .welcomePhoto {
@@ -142,6 +154,7 @@ body {
     font-size: 30px;
     color: #000;
     font-weight: 800;
+    
 }
 
 
