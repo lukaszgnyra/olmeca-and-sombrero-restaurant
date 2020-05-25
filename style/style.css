@@ -105,9 +105,6 @@ body {
     margin-bottom: 10px;
     background-position: center;
     background-size: cover;
-    /* background-color: rgba(200, 200, 200, .9);
-    background-color: rgba(125, 245, 70, 0.5); */
-
     transition: .2s;
     margin: 20px;
 }
