@@ -669,3 +669,161 @@ footer .footerrow-bottom {
         min-width: 100%;
     }
 }
+
+/* catering */
+.catering-container{
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.catering-row{
+    width: 100%;
+    position: relative;
+    margin: 20px auto;
+    height: 550px;
+}
+.catering-photo{
+    width: 800px;
+   margin-bottom: 50px; 
+    height: 400px; 
+    position: absolute;
+    background-color: #fff;
+    border: 3px solid black;
+    background-position: center;
+    background-size: cover;
+
+    
+}
+.catering-paragraph{
+    
+    position: absolute;
+ border: 3px solid #000;
+ 
+ background-color:orange;
+ padding: 30px; 
+}
+.catering-photo-first{
+    left: 0;
+    background-image: url("../img/taco.jpg");
+    top: 0;
+}
+.catering-paragraph-first{
+    left: 20%;
+    bottom: 30px;
+    
+}
+.catering-photo-second{
+    background-image: url("../img/kitchen.jpg");
+    right: 0;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    bottom: 0;
+}
+.catering-paragraph-second{
+    left: 0;
+    width: 80%;
+}
+.catering-photo-third{
+    background-image: url("../img/sombrero.jpg");
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.catering-paragraph-third{
+    left:0;
+    top: -60px;
+   
+}
+.row-third{
+   height: 450px;
+}
+.catering-row-four{
+  height: 100px;
+}
+.catering-paragraph-four{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+}
+@media (max-width:920px){
+    .catering-photo{
+        width: 600px;
+    }
+}
+@media (max-width:868px){
+    .navigation{
+        margin-bottom: 0;
+    }
+    .catering-photo{
+        display: none;
+    }
+    .catering-paragraph{
+        position: static;
+        width: 80%;
+        margin: 0 auto;
+        padding: 50px;
+        transform: translate(0,0);
+    }
+    .catering-paragraph-four{
+        padding: 0;
+        line-height: 100px;
+        text-align: center;
+    }
+    .catering-row{
+        height: auto;
+    }
+    .catering-row-four{
+         height: 106px;
+        
+    }
+    .catering-paragraph-first{
+        position: relative;
+        left: 0;
+        padding: 0;
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    .paragraph-text{
+        position: relative;
+        background: radial-gradient(rgba(255, 181, 181, 0.767) 100%,rgba(255, 255, 255, 0) 100%);
+        padding: 50px;
+        text-align: center;
+    }
+   
+}
+@media (max-width: 576px){
+    body{
+        letter-spacing: normal;
+    }
+    .catering-paragraph{
+        width: 99%;
+        
+    }
+    .catering-paragraph-four{
+        padding: 0;
+        line-height: 100px;
+        text-align: center;
+    }
+    .catering-row-four{
+        line-height: 70px;
+        padding: 15px auto;
+      
+    }
+}
+@media(max-width: 440px){
+    .catering-paragraph{
+        font-size: 16px;
+    }
+    .paragraph-text{
+       padding: 20px;
+    }
+
+}
