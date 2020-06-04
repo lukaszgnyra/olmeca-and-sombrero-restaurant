@@ -35,7 +35,8 @@ body {
     color: black;
 }
 .mainnav a:hover{
-   border-bottom: 5px solid black;
+   border-bottom: 4px solid black;
+   border-radius: 100% 100% 92% 0%/100% 95% 6% 50%;
 }
 
 
