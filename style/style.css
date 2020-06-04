@@ -298,15 +298,17 @@ select {
 .dish-container {
     flex: 50%;
     flex-wrap: wrap;
-
-    min-height: 90px;
+    padding-bottom: 10px;
 }
 
 .dishName {
-    padding-top: 10px;
+   
     font-size: 1.2em;
-    padding-bottom: 5px;
+   
 
+}
+.dish-description{
+    margin-bottom: 12px;
 }
 
 .dishName div {
@@ -323,7 +325,7 @@ select {
 }
 
 .custom-select {
-    padding-bottom: 20px;
+    margin-bottom: 12px;
     font-size: 20px;
 }
 
@@ -652,7 +654,7 @@ footer .footerrow-bottom {
         padding-top: 10px;
 
         border: none;
-        min-height: 90px;
+        
         padding-bottom: 10px;
     }
 }
