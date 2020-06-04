@@ -34,6 +34,9 @@ body {
     margin: 0 50px;
     color: black;
 }
+.mainnav a:hover{
+   border-bottom: 5px solid black;
+}
 
 
 
