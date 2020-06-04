@@ -324,5 +324,3 @@ let appDrinks = new Vue({
         }
     }
 });
-
-// select
