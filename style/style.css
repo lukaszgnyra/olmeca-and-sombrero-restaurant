@@ -608,6 +608,10 @@ footer .footerrow-bottom {
         margin: 10px auto;
 
     }
+    .mainnav a:hover{
+        border: 2px solid black;
+        border-radius: 0px;
+     }
 
     .active {
         left: 0;
