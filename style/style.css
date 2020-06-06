@@ -500,7 +500,7 @@ footer .footerrow-bottom {
     }
 }
 
-@media (max-width: 1015px) {
+@media (max-width: 1016px) {
     .mainnav a {
         margin: 0 30px;
     }
